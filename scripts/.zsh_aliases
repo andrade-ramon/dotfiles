@@ -1,8 +1,3 @@
-GIT="~/github/"
-DEV="~/dev/"
-EC2IP="54.149.190.224"
-
-
 alias editalias="vim ~/.zsh_aliases"
 alias startmysql="mysql.server start"
 alias mysqlstart="startmysql"
@@ -11,15 +6,15 @@ alias slqs="sqls"
 alias slq="sql"
 alias sql="mysql -u root -p ''"
 alias www="cd /var/www/ && ls"
-alias sublime="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias sublime="subl"
 
 #Github
-alias git='hub'
-alias gt="cd $GIT && ls"
-alias dev="cd $DEV && ls"
+#alias git='hub'
+#alias dev="cd $DEV && ls"
+alias gt="cd ~/git && ls"
 
 #Maven
-alias mywtf="mvn clean eclipse:clean eclipse:eclipse -Dwtpversion=2.0"
+#alias mywtf="mvn clean eclipse:clean eclipse:eclipse -Dwtpversion=2.0"
 
 #Utils
 alias ll='ls -l'
@@ -39,8 +34,8 @@ alias rehahs=rehash
 
 
 ######### Elo7 Alias ###########
-alias vpn='for IP in $(host elo7-read1.c4hwpsqyzt5q.us-east-1.rds.amazonaws.com | awk '\''{ print $NF }'\''); do sudo route add -host $IP $(ifconfig ppp0 | awk '\''/inet/ { print $4 }'\''); done'
-alias vpn2='for IP in $(host elo7-read2.c4hwpsqyzt5q.us-east-1.rds.amazonaws.com | awk '\''{ print $NF }'\''); do sudo route add -host $IP $(ifconfig ppp0 | awk '\''/inet/ { print $4 }'\''); done'
+#alias vpn='for IP in $(host elo7-read1.c4hwpsqyzt5q.us-east-1.rds.amazonaws.com | awk '\''{ print $NF }'\''); do sudo route add -host $IP $(ifconfig ppp0 | awk '\''/inet/ { print $4 }'\''); done'
+#alias vpn2='for IP in $(host elo7-read2.c4hwpsqyzt5q.us-east-1.rds.amazonaws.com | awk '\''{ print $NF }'\''); do sudo route add -host $IP $(ifconfig ppp0 | awk '\''/inet/ { print $4 }'\''); done'
 
 
 
